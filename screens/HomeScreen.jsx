@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
-
 import React from "react";
 
 // 3
@@ -16,7 +15,9 @@ const HomeScreen = () => {
 				resizeMode="cover"
 				style={styles.image}
 			>
-				<Text style={styles.text}>Inside</Text>
+				<View style={styles.textContainer}>
+					<Text style={styles.text}>Go!</Text>
+				</View>
 			</ImageBackground>
 		</View>
 	);
@@ -38,6 +39,15 @@ const styles = StyleSheet.create({
 		lineHeight: 84,
 		fontWeight: "bold",
 		textAlign: "center",
-		backgroundColor: "#000000c0",
+	},
+	textContainer: {
+		backgroundColor: "red",
+		borderRadius: 50,
+		width: "25%",
+		padding: 10,
+		// justifyContent: "center",
+		// alignItems: "center",
+		marginLeft: "auto",
+		marginRight: "auto",
 	},
 });
